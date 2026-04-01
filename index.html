@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPA Calcuulator</title>
+</head>
+<body>
+    <div class="main-box">
+        <h1>GPA Calculator</h1>
+        <!--box header-->
+        <div class="header">
+            <h4>Number of subject:</h4>
+            <select id="subjects" onchange="createSubjects()">
+                <option>Choose</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+        </div>
+        <!--box body-->
+        <div id="subjectContainer"></div>
+        <!--box button-->
+        <button onclick="calculateGPA()">Calculate GPA</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
